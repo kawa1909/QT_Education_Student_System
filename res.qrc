@@ -1,7 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file>Icon/DengLu.JPG</file>
-        <file>Icon/TouXiang.JPG</file>
         <file>Icon/add.svg</file>
         <file>Icon/administration.svg</file>
         <file>Icon/login.svg</file>

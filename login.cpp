@@ -45,7 +45,9 @@ void login::on_btn_DengLu_clicked()
         return;
     }else{
         //从数据库查找是否有这个用户
-        if(!query.exec(QString("SELECT * FROM student WHERE name = '%1'").arg(ui->le_YongHuMingText->text()))){
+        if(!query.exec(QString("SELECT * FROM student WHERE name = '%1' AND studentID = %2")
+                       .arg(ui->le_YongHuMingText->text())
+                       .arg(ui->le_MiMaText->text().toInt()))) {
             qDebug() << "登录界面查询失败原因：" << query.lastError().text();
             msgBox.exec();
             return;

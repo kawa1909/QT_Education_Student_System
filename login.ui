@@ -141,7 +141,7 @@ font: 18pt &quot;黑体&quot;;</string>
              <string/>
             </property>
             <property name="text">
-             <string>张三</string>
+             <string/>
             </property>
             <property name="placeholderText">
              <string>请输入用户名</string>
@@ -219,7 +219,7 @@ font: 18pt &quot;黑体&quot;;</string>
              <string/>
             </property>
             <property name="text">
-             <string>1</string>
+             <string/>
             </property>
             <property name="frame">
              <bool>true</bool>
