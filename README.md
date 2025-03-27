@@ -1,0 +1,2 @@
+# Qt_Education_Student_System
+基于Qt的高校学生信息管理系统
