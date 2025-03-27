@@ -6,11 +6,24 @@
 部分功能模块未实现，后面会持续更新！
 ## 安装、配置与部署步骤
 ### 环境要求
-Qt（5.14.2）
-SQLite3（建议预先配置好数据库实例）
-MySQL（可选）
-Redis（可选，用于缓存加速）
-Docker（用于容器化部署，可选）
+- Qt（5.14.2）
+- SQLite3（建议预先配置好数据库实例）
+- MySQL（可选）
+- Redis（可选，用于缓存加速）
+- Docker（用于容器化部署，可选）
+
+## 代码结构
+```
+├── main.cpp  # 主程序入口
+├── login.h / login.cpp  # 用户登录界面
+├── mainwidget.h / mainwidget.cpp  # 信息管理界面
+├── images/  # 图片资源
+├── driver.cpp/driver.h  # 数据库驱动
+├── addstudent.cpp/addstudent.h  # 添加学生界面
+├── modifyingstudent.cpp/modifyingstudent.h  # 修改学生界面
+├── DATA.db  # 数据库文件 
+├── README.md  # 本项目文档
+```
 
 ## 主要功能模块
 ### 学生管理模块
