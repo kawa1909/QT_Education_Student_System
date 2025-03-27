@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>addStudent</class>
+ <widget class="QWidget" name="addStudent">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>980</width>
+    <height>576</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>添加学生</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/Icon/add.svg</normaloff>:/Icon/add.svg</iconset>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>971</width>
+     <height>561</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_9" stretch="3,1">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QTableWidget" name="tableWidget"/>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="btn_TuiChu">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>AcadEref</family>
+            <pointsize>-1</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: rgb(255, 175, 204); /* 背景色 */
+    color: white; /* 文字颜色 */
+    font-size: 19px; /* 文字大小 */
+    border: none; /* 去掉边框 */
+    width: 100px; /* 固定宽度 */
+    height: 40px; /* 固定高度 */
+    border-radius: 10px; /* 圆角 */
+}
+
+QPushButton:hover {
+    background-color: rgb(251, 111, 146); /* 鼠标悬停颜色变亮 */
+}
+
+QPushButton:pressed {
+    background-color: rgb(255, 0, 110); /* 按下时颜色变暗 */
+    transform: scale(0.95); /* 点击时缩小效果 */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>退出</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_GengXin">
+          <property name="minimumSize">
+           <size>
+            <width>90</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>AcadEref</family>
+            <pointsize>-1</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: rgb(255, 175, 204); /* 背景色 */
+    color: white; /* 文字颜色 */
+    font-size: 19px; /* 文字大小 */
+    border: none; /* 去掉边框 */
+    width: 100px; /* 固定宽度 */
+    height: 40px; /* 固定高度 */
+    border-radius: 10px; /* 圆角 */
+}
+
+QPushButton:hover {
+    background-color: rgb(251, 111, 146); /* 鼠标悬停颜色变亮 */
+}
+
+QPushButton:pressed {
+    background-color: rgb(255, 0, 110); /* 按下时颜色变暗 */
+    transform: scale(0.95); /* 点击时缩小效果 */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>更新</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_name">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(65, 90, 119);
+font: 12pt &quot;黑体&quot;;</string>
+          </property>
+          <property name="text">
+           <string>姓名：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_name">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+    border: 2px solid rgb(255, 175, 204); /* 边框颜色 */
+    border-radius: 15px; /* 设置圆角 */
+    padding: 8px; /* 内边距 */
+    font-size: 15px; /* 字体大小 */
+    background-color: rgb(240, 240, 240); /* 背景颜色 */
+}</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="label_age">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(65, 90, 119);
+font: 12pt &quot;黑体&quot;;</string>
+          </property>
+          <property name="text">
+           <string>年龄：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_age">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+    border: 2px solid rgb(255, 175, 204); /* 边框颜色 */
+    border-radius: 15px; /* 设置圆角 */
+    padding: 8px; /* 内边距 */
+    font-size: 15px; /* 字体大小 */
+    background-color: rgb(240, 240, 240); /* 背景颜色 */
+}</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLabel" name="label_grade">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(65, 90, 119);
+font: 12pt &quot;黑体&quot;;</string>
+          </property>
+          <property name="text">
+           <string>年级：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_grade">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+    border: 2px solid rgb(255, 175, 204); /* 边框颜色 */
+    border-radius: 15px; /* 设置圆角 */
+    padding: 8px; /* 内边距 */
+    font-size: 15px; /* 字体大小 */
+    background-color: rgb(240, 240, 240); /* 背景颜色 */
+}</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <widget class="QLabel" name="label_class">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(65, 90, 119);
+font: 12pt &quot;黑体&quot;;</string>
+          </property>
+          <property name="text">
+           <string>班级：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_class">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+    border: 2px solid rgb(255, 175, 204); /* 边框颜色 */
+    border-radius: 15px; /* 设置圆角 */
+    padding: 8px; /* 内边距 */
+    font-size: 15px; /* 字体大小 */
+    background-color: rgb(240, 240, 240); /* 背景颜色 */
+}</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <widget class="QLabel" name="label_sudentID">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(65, 90, 119);
+font: 12pt &quot;黑体&quot;;</string>
+          </property>
+          <property name="text">
+           <string>学号：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_studentID">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+    border: 2px solid rgb(255, 175, 204); /* 边框颜色 */
+    border-radius: 15px; /* 设置圆角 */
+    padding: 8px; /* 内边距 */
+    font-size: 15px; /* 字体大小 */
+    background-color: rgb(240, 240, 240); /* 背景颜色 */
+}</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <widget class="QLabel" name="label_phone">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(65, 90, 119);
+font: 12pt &quot;黑体&quot;;</string>
+          </property>
+          <property name="text">
+           <string>手机：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_phone">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+    border: 2px solid rgb(255, 175, 204); /* 边框颜色 */
+    border-radius: 15px; /* 设置圆角 */
+    padding: 8px; /* 内边距 */
+    font-size: 15px; /* 字体大小 */
+    background-color: rgb(240, 240, 240); /* 背景颜色 */
+}</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_8">
+        <item>
+         <widget class="QLabel" name="label_wechat">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(65, 90, 119);
+font: 12pt &quot;黑体&quot;;</string>
+          </property>
+          <property name="text">
+           <string>微信：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_wechat">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+    border: 2px solid rgb(255, 175, 204); /* 边框颜色 */
+    border-radius: 15px; /* 设置圆角 */
+    padding: 8px; /* 内边距 */
+    font-size: 15px; /* 字体大小 */
+    background-color: rgb(240, 240, 240); /* 背景颜色 */
+}</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
